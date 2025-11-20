@@ -1,2 +1,314 @@
-<h1>Hello World!</h1>
-<p>Welcome to my site.</p>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Priyanshi Toshniwal — Resume</title>
+    <meta name="description" content="Resume / CV of Priyanshi Toshniwal" />
+    <style>
+        :root{ --accent:#0b6cf0; --muted:#666; --bg:#fbfbfd; --card:#fff; --maxw:900px; font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;}
+        *{box-sizing:border-box}
+        body{background:var(--bg); color:#111; margin:20px; display:flex; justify-content:center}
+        .container{width:100%; max-width:var(--maxw);}
+        .card{background:var(--card); border-radius:12px; box-shadow:0 6px 18px rgba(15,20,30,0.06); overflow:hidden; padding:32px}
+        header{display:flex; gap:20px; align-items:center}
+        .avatar{width:96px; height:96px; border-radius:12px; background:linear-gradient(135deg,var(--accent),#6fd3ff); display:flex; align-items:center; justify-content:center; color:white; font-weight:700; font-size:28px}
+        h1{margin:0; font-size:26px}
+        .meta{color:var(--muted); margin-top:6px}
+        .contact{margin-left:auto; text-align:right}
+        a.link{color:var(--accent); text-decoration:none}
+
+        nav{display:flex; gap:12px; margin:22px 0 10px; flex-wrap:wrap}
+        .pill{background:#f4f8ff; color:var(--accent); padding:6px 10px; border-radius:999px; font-size:13px}
+
+        section{margin-top:18px}
+        .section-title{display:flex; align-items:center; gap:12px; margin-bottom:14px}
+        .section-title h2{margin:0; font-size:16px}
+        .muted{color:var(--muted); font-size:14px}
+
+        .experience{display:flex; flex-direction:column; gap:14px}
+        .job{padding:14px; border-radius:10px; background:#fcfdff; border:1px solid #f0f3fb}
+        .job-head{display:flex; gap:12px; align-items:start}
+        .job-head .role{font-weight:700}
+        .job-head .org{color:var(--muted)}
+        .job-dates{margin-left:auto; text-align:right; color:var(--muted); font-size:13px}
+        .bullets{margin-top:8px; margin-left:6px}
+        .bullets li{margin:6px 0}
+
+        .two-col{display:grid; grid-template-columns:1fr 300px; gap:18px}
+        aside .card{padding:18px}
+        .skills, .reports{display:flex; flex-direction:column; gap:8px}
+        .report-list a{display:block; text-decoration:none; color:var(--accent); font-size:14px}
+
+        footer{margin-top:20px; text-align:center; color:var(--muted); font-size:13px}
+
+        @media (max-width:880px){
+            .two-col{grid-template-columns:1fr}
+            .contact{margin-left:0; text-align:left}
+            header{flex-direction:row; align-items:center}
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <header>
+            <div class="avatar">PT</div>
+            <div>
+                <h1>PRIYANSHI TOSHNIWAL</h1>
+                <div class="meta">Senior Associate — Product Research & Design<br><span class="muted">Based in Bangalore</span></div>
+            </div>
+            <div class="contact">
+                <div><strong>+91-9340983342</strong></div>
+                <div class="muted"><a class="link" href="https://www.linkedin.com/in/priyanshi-toshniwal">LinkedIn/priyanshi-toshniwal</a></div>
+            </div>
+        </header>
+
+        <nav>
+            <div class="pill">Product Research</div>
+            <div class="pill">Design & Strategy</div>
+            <div class="pill">Food Systems</div>
+            <div class="pill">AgWater & Climate</div>
+        </nav>
+
+        <div class="two-col">
+            <main>
+                <section id="work">
+                    <div class="section-title"><h2>WORK EXPERIENCE</h2></div>
+                    <div class="experience">
+
+                        <article class="job">
+                            <div class="job-head">
+                                <div>
+                                    <div class="role">Senior Associate, Product Research and Design — Livelihoods Ecosystem</div>
+                                    <div class="org muted">The/Nudge Institute, Bangalore</div>
+                                </div>
+                                <div class="job-dates">Apr 2025 – present</div>
+                            </div>
+                            <ul class="bullets">
+                                <li>Directed a two-member team to create an industry-mapped taxonomy of digital tasks and skills (recognised by MeitY; awaiting adoption), producing a credentialisation-ready framework to enhance fairness, transparency, and upward mobility in India’s digital work ecosystem.</li>
+                                <li>Owned research on food systems and waste &amp; circularity to assess climate-change impacts on vulnerable communities; authored the public-facing report <em>One Crisis Away</em>.</li>
+                                <li>Co-leading a roadmap study with an external research partner to identify key problem areas in food systems and waste &amp; circularity; produced five major problem statements to be launched as grand prize challenges (INR 6–10 crore catalytic capital each).</li>
+                                <li>Leading end-to-end planning, conceptualisation, and execution of an interactive microsite to strengthen program visibility and convert Prize into a knowledge-driven platform.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job">
+                            <div class="job-head">
+                                <div>
+                                    <div class="role">Associate, Product Research and Design — Livelihoods Ecosystem</div>
+                                    <div class="org muted">The/Nudge Institute, Bangalore</div>
+                                </div>
+                                <div class="job-dates">Aug 2024 – Mar 2025</div>
+                            </div>
+                            <ul class="bullets">
+                                <li>Spearheaded landscape research on female labour force participation; authored a distillation summary that formed the foundation for a roadmap study and five problem statements (two live prize challenges).</li>
+                                <li>Directed programming for the high-visibility panel “Future of Women in Work” at charcha 2024 and catalysed the soft launch of the distillation summary and challenge series.</li>
+                                <li>Developed an investability case for the AgWater sector through mixed-method research; built databases of startups and investors; analysed funding patterns and estimated capital needs.</li>
+                                <li>Co-led a 3-year action-research proposal for the Gates Foundation to enhance women’s participation in digital value chains, securing The/Nudge as a core partner in Sanmati 2.0.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job">
+                            <div class="job-head">
+                                <div>
+                                    <div class="role">Associate, Challenge, Prize, Livelihoods Ecosystem</div>
+                                    <div class="org muted">The/Nudge Institute, Bangalore</div>
+                                </div>
+                                <div class="job-dates">July 2023 – Aug 2024</div>
+                            </div>
+                            <ul class="bullets">
+                                <li>Led operations for the grand finale event in Delhi for the Ashirvad Water Challenge; managed internal and external stakeholders.</li>
+                                <li>Designed post-challenge metrics and processes to engage challengers beyond the challenge lifecycle.</li>
+                                <li>Supported landscape research for problem statements in rural and urban water governance and co-managed an external research agency.</li>
+                                <li>Documented end-to-end challenge project report and established team playbooks and M&amp;E practices.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job">
+                            <div class="job-head">
+                                <div>
+                                    <div class="role">Fellow — The Gender Lab</div>
+                                    <div class="org muted">Mumbai</div>
+                                </div>
+                                <div class="job-dates">July 2022 – Mar 2023</div>
+                            </div>
+                            <ul class="bullets">
+                                <li>Enabled 260+ adolescent girls to understand gender issues and build leadership skills via workshop-based service-learning.</li>
+                                <li>Mentored 40+ community projects from initiation to impact-oriented actions.</li>
+                                <li>Coordinated with stakeholders across 11 schools for scheduling and program governance.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job">
+                            <div class="job-head">
+                                <div>
+                                    <div class="role">Founder — In-mind</div>
+                                    <div class="org muted">(Mental health awareness for children)</div>
+                                </div>
+                                <div class="job-dates">Oct 2020 – Apr 2022</div>
+                            </div>
+                            <ul class="bullets">
+                                <li>Launched workshops promoting mental health awareness for children; conducted 3 workshops with 150 students at The Vidhyanjali International School, Indore.</li>
+                                <li>Designed an activity-based curriculum and hosted 15+ virtual workshops in 2021 for multiple age groups.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job">
+                            <div class="job-head">
+                                <div>
+                                    <div class="role">Assistant Manager — Community Development</div>
+                                    <div class="org muted">LetsEndorse Development Private Limited</div>
+                                </div>
+                                <div class="job-dates">Nov 2020 – Jan 2021</div>
+                            </div>
+                            <ul class="bullets">
+                                <li>Designed 20+ instructor session plans for an Entrepreneurship Development Program for 300+ MSMEs.</li>
+                                <li>Drafted a master SOP for MSME compliance that reduced business establishment time by 50% and led a team of 10 to develop 10 key business SOPs.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job">
+                            <div class="job-head">
+                                <div>
+                                    <div class="role">Content Writer</div>
+                                    <div class="org muted">(Freelance)</div>
+                                </div>
+                                <div class="job-dates">Aug 2020 – Nov 2020</div>
+                            </div>
+                            <ul class="bullets">
+                                <li>Executed lead generation via cold-emailing and designed a marketing pitch that increased queries by ~40–50% for a Bhubaneswar firm.</li>
+                            </ul>
+                        </article>
+
+                    </div>
+                </section>
+
+                <section id="internships">
+                    <div class="section-title"><h2>INTERNSHIPS</h2></div>
+                    <div class="experience">
+                        <article class="job">
+                            <div class="job-head">
+                                <div>
+                                    <div class="role">Student Intern — DeHaat</div>
+                                    <div class="org muted">Sep 2019 – May 2020</div>
+                                </div>
+                                <div class="job-dates">Bulandshahr, UP</div>
+                            </div>
+                            <ul class="bullets">
+                                <li>Conducted primary &amp; secondary research on agri-value chain financing across 10 villages and implemented a pilot program projected at INR 6 crores for 500 farmers.</li>
+                                <li>Developed a business model to support farmer families amid COVID-19 through diversified agri-income sources.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job">
+                            <div class="job-head">
+                                <div>
+                                    <div class="role">Management Trainee — Secretarial Department</div>
+                                    <div class="org muted">National Steel &amp; Agro Industries Limited</div>
+                                </div>
+                                <div class="job-dates">Oct 2017 – Nov 2018</div>
+                            </div>
+                            <ul class="bullets">
+                                <li>Practiced corporate compliances for a BSE-NSE listed company, drafted annual reports, and assisted in the AGM with 100+ stakeholders.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="volunteering">
+                    <div class="section-title"><h2>VOLUNTEERING EXPERIENCE</h2></div>
+                    <div class="experience">
+                        <article class="job">
+                            <div class="job-head">
+                                <div>
+                                    <div class="role">Para-Counsellor — Sang: a Youth Organisation by Young India Fellows</div>
+                                    <div class="org muted">May 2020 – Oct 2021</div>
+                                </div>
+                                <div class="job-dates"></div>
+                            </div>
+                            <ul class="bullets">
+                                <li>Led a fundraising campaign to raise INR 1 lakh for a family affected by the Delhi riots and coordinated legal &amp; financial support for recovery.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job">
+                            <div class="job-head">
+                                <div>
+                                    <div class="role">Listener — The Wall and Us Foundation</div>
+                                    <div class="org muted">Dec 2018 – Jan 2021</div>
+                                </div>
+                            </div>
+                            <ul class="bullets">
+                                <li>Volunteered 500+ hours listening to 100+ people and mentored new recruits.</li>
+                            </ul>
+                        </article>
+
+                        <article class="job">
+                            <div class="job-head">
+                                <div>
+                                    <div class="role">Community Engagement Head — The Wall and Us Foundation</div>
+                                    <div class="org muted">Dec 2019 – May 2020</div>
+                                </div>
+                            </div>
+                            <ul class="bullets">
+                                <li>Conceptualised and led the Community Engagement Team and reduced volunteer churn by 60% through structured activities and onboarding plans.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+            </main>
+
+            <aside>
+                <div class="card">
+                    <section id="education">
+                        <div class="section-title"><h2>EDUCATION</h2></div>
+                        <div>
+                            <strong>PG Diploma in Liberal Studies (Young India Fellowship)</strong><br>
+                            Ashoka University, 2019 - 20 — CGPA 3.26 / 4
+                        </div>
+                        <div style="margin-top:10px">
+                            <strong>Company Secretary (CS)</strong><br>
+                            The Institute of Company Secretaries of India (ICSI), 2014 - 17 — 51.3%
+                        </div>
+                        <div style="margin-top:10px">
+                            <strong>BBA</strong><br>
+                            Devi Ahilya Vishwavidyalaya (DAVV), 2014 - 17 — 69.1%
+                        </div>
+                    </section>
+
+                    <section id="awards" style="margin-top:12px">
+                        <div class="section-title"><h2>AWARDS &amp; RECOGNITION</h2></div>
+                        <ul class="bullets">
+                            <li>Product Champion (Top 5 Nominee) — Nudgestar</li>
+                            <li>Special Recognition — ELM Project, Young India Fellowship 2020</li>
+                            <li>Best Presenter — 18th Management Skills Orientation Programme, ICSI Indore</li>
+                            <li>AIR-4 (State Rank 1) — CS Foundation, Dec 2014</li>
+                        </ul>
+                    </section>
+
+                    <section id="reports" style="margin-top:12px">
+                        <div class="section-title"><h2>REPORTS</h2></div>
+                        <div class="reports report-list">
+                            <a href="#">Distillation Summary - Future of Women in Work</a>
+                            <a href="#">Distillation Report_Future of Women in Work</a>
+                            <a href="#">Investability Case for AgWater</a>
+                            <a href="#">Mapping India's AgWater Landscape</a>
+                            <a href="#">Pathways to Scale AgWater Innovation</a>
+                            <a href="#">Distillation summary - Food Systems Landscape</a>
+                            <a href="#">One Crisis Away</a>
+                        </div>
+                    </section>
+
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+            Last updated: Nov 2025 — Built for GitHub Pages
+        </footer>
+    </div>
+</div>
+</body>
+</html>
