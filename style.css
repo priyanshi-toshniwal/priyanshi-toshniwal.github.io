@@ -1,0 +1,199 @@
+:root {
+    --accent: #0b6cf0;
+    --muted: #666;
+    --bg: #fbfbfd;
+    --card: #fff;
+    --maxw: 900px;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: #111;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--maxw);
+}
+
+.card {
+    background: var(--card);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(15, 20, 30, 0.06);
+    overflow: hidden;
+    padding: 32px;
+}
+
+header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--accent), #6fd3ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.meta {
+    color: var(--muted);
+    margin-top: 6px;
+}
+
+.contact {
+    margin-left: auto;
+    text-align: right;
+}
+
+a.link {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 12px;
+    margin: 22px 0 10px;
+    flex-wrap: wrap;
+}
+
+.pill {
+    background: #f4f8ff;
+    color: var(--accent);
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 13px;
+}
+
+section {
+    margin-top: 18px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.section-title h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.muted {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.job {
+    padding: 14px;
+    border-radius: 10px;
+    background: #fcfdff;
+    border: 1px solid #f0f3fb;
+}
+
+.job-head {
+    display: flex;
+    gap: 12px;
+    align-items: start;
+}
+
+.job-head .role {
+    font-weight: 700;
+}
+
+.job-head .org {
+    color: var(--muted);
+}
+
+.job-dates {
+    margin-left: auto;
+    text-align: right;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.bullets {
+    margin-top: 8px;
+    margin-left: 6px;
+}
+
+.bullets li {
+    margin: 6px 0;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 18px;
+}
+
+aside .card {
+    padding: 18px;
+}
+
+.skills,
+.reports {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.report-list a {
+    display: block;
+    text-decoration: none;
+    color: var(--accent);
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+@media (max-width: 880px) {
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    header {
+        flex-direction: row;
+        align-items: center;
+    }
+}
