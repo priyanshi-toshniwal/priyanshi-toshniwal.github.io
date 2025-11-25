@@ -810,8 +810,8 @@ section,
 
 @media (max-width: 768px) {
   .hero .hero-image .image-wrapper .floating-card.card-1 {
-    left: 0;
-    top: 10%;
+    left: -10%;
+    top: 5%;
   }
 }
 
@@ -829,7 +829,7 @@ section,
 
 @media (max-width: 768px) {
   .hero .hero-image .image-wrapper .floating-card.card-2 {
-    right: 0;
+    right: -10%;
     top: 50%;
   }
 }
@@ -848,10 +848,31 @@ section,
 
 @media (max-width: 768px) {
   .hero .hero-image .image-wrapper .floating-card.card-3 {
-    left: 0;
+    left: -10%;
+    bottom: 25%;
+  }
+}
+
+
+.hero .hero-image .image-wrapper .floating-card.card-4 {
+  bottom: 60%;
+  right: -15%;
+  z-index: 3;
+}
+
+@media (max-width: 992px) {
+  .hero .hero-image .image-wrapper .floating-card.card-4 {
+    right: -10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero .hero-image .image-wrapper .floating-card.card-4 {
+    right: -10%;
     bottom: 5%;
   }
 }
+
 
 @media (max-width: 992px) {
   .hero .hero-content {
