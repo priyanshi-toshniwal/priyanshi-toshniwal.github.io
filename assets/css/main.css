@@ -755,11 +755,7 @@ section,
   position: relative;
 }
 
-.hero .hero-image .image-wrapper {
-  position: relative;
-  max-width: 500px;
-  margin: 0 auto;
-}
+
 
 .hero .hero-image .image-wrapper .main-image {
   border-radius: 12px;
@@ -786,72 +782,65 @@ section,
   transition: all 0.3s ease;
 }
 
-.hero .hero-image .image-wrapper .floating-card:hover {
+
+.hero .hero-image .image-wrapper .static-card {
+  position: relative;
+  background: var(--surface-color);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--heading-color), transparent 92%);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--heading-color);
+  transition: all 0.3s ease;
+}
+
+/* Grid container for cards */
+.hero .hero-image .image-wrapper .static-card {
+  width: 100%; /* needed inside grid */
+}
+
+.hero .hero-image .image-wrapper {
+  /* image on top, grid below */
+}
+
+.hero .hero-image .image-wrapper .static-card:nth-child(1),
+.hero .hero-image .image-wrapper .static-card:nth-child(3),
+.hero .hero-image .image-wrapper .static-card:nth-child(4),
+.hero .hero-image .image-wrapper .static-card:nth-child(5) {
+  /* these are cards; image is nth-child(1) */
+}
+.hero .hero-image .image-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* NEW — grid for cards */
+.hero .hero-image .image-wrapper .cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+
+.hero .hero-image .image-wrapper .static-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px color-mix(in srgb, var(--heading-color), transparent 85%);
 }
 
-.hero .hero-image .image-wrapper .floating-card i {
-  font-size: 1.25rem;
-  color: var(--accent-color);
+.hero .hero-image .image-wrapper {
+  display: flex;
+  flex-direction: column;       /* puts cards below the image */
+  align-items: flex-start;      /* left-align cards */
+  gap: 1rem;                    /* spacing between image and card grid */
 }
 
-.hero .hero-image .image-wrapper .floating-card.card-1 {
-  top: 20%;
-  left: -15%;
-  z-index: 3;
-}
 
-@media (max-width: 992px) {
-  .hero .hero-image .image-wrapper .floating-card.card-1 {
-    left: -10%;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero .hero-image .image-wrapper .floating-card.card-1 {
-    left: -10%;
-    top: 5%;
-  }
-}
-
-.hero .hero-image .image-wrapper .floating-card.card-2 {
-  top: 60%;
-  right: -15%;
-  z-index: 3;
-}
-
-@media (max-width: 992px) {
-  .hero .hero-image .image-wrapper .floating-card.card-2 {
-    right: -10%;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero .hero-image .image-wrapper .floating-card.card-2 {
-    right: -10%;
-    top: 50%;
-  }
-}
-
-.hero .hero-image .image-wrapper .floating-card.card-3 {
-  bottom: 15%;
-  left: -10%;
-  z-index: 3;
-}
-
-@media (max-width: 992px) {
-  .hero .hero-image .image-wrapper .floating-card.card-3 {
-    left: -5%;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero .hero-image .image-wrapper .floating-card.card-3 {
-    left: -10%;
-    bottom: 25%;
-  }
-}
 
 
 .hero .hero-image .image-wrapper .floating-card.card-4 {
