@@ -395,18 +395,18 @@ h6 {
 }
 
 .footer .social-links a {
-  font-size: 16px;
+  font-size: 20px; /* ⬆ bigger icon */
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--accent-color);
   color: var(--contrast-color);
   line-height: 1;
-  margin: 0 4px;
+  margin: 0 6px; /* slightly more breathing room */
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 40px;   /* ⬆ larger circle */
+  height: 40px;
   transition: 0.3s;
 }
 
