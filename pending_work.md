@@ -9,15 +9,25 @@ Based on the current `index.html`, here is a list of places where data is missin
 - ✅ **COMPLETED**: Updated header social media links to match footer (Medium, WordPress, LinkedIn).
 
 ## 3. Skills Section
-- **Section Description:** The paragraph right under the "Skills" heading contains Latin placeholder text ("Magnam dolores commodi suscipit...").
-- **Primary Technologies:** The listed skills (JavaScript, React, Node.js, AWS, Figma, Docker) appear to be template defaults and should be replaced with actual skills relevant to product research, design, and social innovation analysis.
-- **Recent Achievements:** The certifications listed (Kubernetes Administrator, Google Cloud Architect, AWS Solutions Architect) appear to be template defaults and should be updated or removed.
+- ✅ **COMPLETED**: Replaced default IT skills with new 'Key Skillsets' and 'Thematic Exposure' categories as requested.
+- ✅ **COMPLETED**: Updated years of experience to 4.5+.
+- ✅ **COMPLETED**: Removed default certifications.
 
 ## 4. Resume Section
-- **Section Description:** The paragraph under the "Resume" heading contains Latin placeholder text ("Magnam dolores commodi suscipit...").
-- **Education Formatting:** 
-  - ✅ **COMPLETED**: Fixed trailing commas in the education titles.
+- ✅ **COMPLETED**: Removed placeholder description text.
+- ✅ **COMPLETED**: Updated all Professional Experience entries with new descriptions and bullet points.
+- ✅ **COMPLETED**: Updated Internship entries.
+- ✅ **COMPLETED**: Replaced "Professional Certifications" with "Volunteering" section.
+- ✅ **COMPLETED**: Updated formatting in Education section.
 
 ## 5. Portfolio Section
-- **Section Description:** The paragraph under the "Portfolio" heading contains Latin placeholder text ("Magnam dolores commodi suscipit...").
-- **Portfolio Projects:** The listed projects (Elemental Branding, Digital Workspace, Urban Narratives, Annual Report Design, Artisan Collection, Sustainable Commerce) and their associated images appear to be default template placeholders. These should be replaced with actual projects, research reports, or case studies.
+- ✅ **COMPLETED**: Changed section title to "Recent Work".
+- ✅ **COMPLETED**: Removed category filters.
+- ✅ **COMPLETED**: Updated portfolio items with 3 new reports/projects from the CSV ("Future of Women in Work", "Mapping India's AgWater Landscape", "One Crisis Away"). Note: The thumbnail images are still placeholders and should ideally be updated with actual report covers in the future.
+
+## 6. General Cleanup
+- ✅ **COMPLETED**: Removed Services section.
+- ✅ **COMPLETED**: Removed Testimonials section.
+- ✅ **COMPLETED**: Updated Contact info and text.
+- ✅ **COMPLETED**: Updated Hero section text and experience numbers.
+- ✅ **COMPLETED**: Updated About section with new multi-paragraph bio.
