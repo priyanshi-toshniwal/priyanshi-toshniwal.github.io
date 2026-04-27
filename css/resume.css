@@ -1,0 +1,130 @@
+.collapsible-toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  color: inherit;
+  user-select: none;
+  border: none;
+  background: none;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
+
+.collapsible-toggle.position-heading {
+  margin-bottom: 0;
+  align-items: flex-start;
+}
+
+.collapsible-toggle:hover {
+  opacity: 0.8;
+}
+
+.collapsible-toggle .heading-content {
+  flex: 1;
+}
+
+.collapsible-toggle .heading-content h3 {
+  margin-bottom: 0.25rem;
+  margin-top: 0;
+}
+
+.collapsible-toggle .heading-content h4 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.toggle-chevron {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+  margin-top: 4px;
+  order: -1;
+  transform: rotate(-90deg);
+}
+
+.collapsible-toggle[aria-expanded="true"] .toggle-chevron {
+  transform: rotate(0deg);
+}
+
+.toggle-label {
+  display: none;
+}
+
+.collapsible-body {
+  display: none;
+  margin-top: 10px;
+}
+
+.collapsible-body.open {
+  display: block;
+}
+
+/* Custom column width 5.5/12 = 45.83% */
+@media (min-width: 992px) {
+  .col-lg-5-5 {
+    flex: 0 0 calc(5.5 / 12 * 100%);
+    max-width: calc(5.5 / 12 * 100%);
+  }
+}
+
+/* Resume layout spacing */
+.resume .professional-journey {
+  margin-bottom: 4rem;
+}
+
+.resume .education-skills {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* Responsive column spacing */
+.resume .row {
+  gap: 2rem;
+}
+
+@media (min-width: 992px) {
+  .resume .row {
+    gap: 3rem;
+  }
+}
+
+/* Education grid layout - horizontal on wide screens, vertical on tall/small screens */
+.resume .education-skills .education-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1400px) {
+  .resume .education-skills .education-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .resume .education-skills .education-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Improve spacing on smaller screens */
+@media (max-width: 991px) {
+  .resume .professional-journey {
+    margin-bottom: 3rem;
+  }
+
+  .resume .education-skills {
+    margin-top: 2.5rem;
+  }
+
+  .resume .row {
+    gap: 1.5rem;
+  }
+}
