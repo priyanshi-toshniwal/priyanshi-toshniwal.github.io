@@ -21,45 +21,54 @@
    * Tries to load numbered images sequentially
    */
   async function detectGalleryImages() {
-    const imageExtensions = ['webp', 'jpg', 'jpeg', 'png'];
-    const detectedImages = [];
-
-    // List of known gallery images (can be expanded as new images are added)
     const knownImages = [
-      'portfolio-2.webp',
-      'portfolio-3.webp',
-      'portfolio-5.webp',
-      'portfolio-6.webp',
-      'portfolio-7.webp',
-      'portfolio-8.webp',
-      'portfolio-9.webp',
-      'portfolio-10.webp',
-      'portfolio-11.webp',
-      'portfolio-12.webp',
-      'portfolio-portrait-3.webp'
+      '1000.jpg',
+      '1010.jpg',
+      '1020.png',
+      '1030.jpg',
+      '1040.jpg',
+      '1050.jpg',
+      '1060.jpg',
+      '1070.jpg',
+      '1080.jpg',
+      '1090.jpg',
+      '1100.jpg',
+      '1110.jpg',
+      '1120.jpg',
+      '1130.jpg',
+      '1140.jpg',
+      '1150.jpg',
+      '1160.jpg',
     ];
 
-    // Try to load each known image
-    for (const imageName of knownImages) {
-      const imagePath = galleryFolder + imageName;
-      // Check if image exists by attempting to load it
-      const img = new Image();
-      img.onload = () => {
-        detectedImages.push({
-          src: imagePath,
-          alt: imageName.replace(/\.[^/.]+$/, "").replace(/-/g, ' ')
-        });
-      };
-      img.src = imagePath;
-    }
+    const imagePromises = knownImages.map((imageName) => {
+      return new Promise((resolve) => {
+        const imagePath = galleryFolder + imageName;
 
-    // Wait for images to load
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        galleryImages = detectedImages;
-        resolve(detectedImages);
-      }, 500);
+        const img = new Image();
+
+        img.onload = () => {
+          resolve({
+            src: imagePath,
+            alt: imageName
+                .replace(/\.[^/.]+$/, "")
+                .replace(/-/g, ' ')
+          });
+        };
+
+        img.onerror = () => {
+          resolve(null);
+        };
+
+        img.src = imagePath;
+      });
     });
+
+    const results = await Promise.all(imagePromises);
+
+    galleryImages = results.filter(Boolean);
+
+    return galleryImages;
   }
 
   function initGallery() {
@@ -70,7 +79,13 @@
     if (!galleryTrack || !galleryDots) {
       return;
     }
-
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        clearInterval(autoPlayInterval);
+      } else {
+        resetAutoPlay();
+      }
+    });
     // Detect gallery images first
     detectGalleryImages().then((images) => {
       if (images.length === 0) {
@@ -133,7 +148,8 @@
     if (galleryImages.length === 0) return;
 
     // Update current slide
-    currentSlide = index % galleryImages.length;
+    currentSlide =
+        (index + galleryImages.length) % galleryImages.length;
 
     // Update track position
     galleryTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
