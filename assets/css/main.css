@@ -1853,6 +1853,7 @@ section,
 }
 
 .resume .professional-journey .experience-timeline {
+    text-align: justify;
     position: relative;
     padding-left: 2rem;
 }
@@ -4165,8 +4166,8 @@ section,
 /* Custom column width 5.5/12 = 45.83% */
 @media (min-width: 992px) {
     .col-lg-5-5 {
-        flex: 0 0 calc(5.5 / 12 * 100%);
-        max-width: calc(5.5 / 12 * 100%);
+        flex: 0 0 calc(8.5 / 12 * 100%);
+        max-width: calc(8.5 / 12 * 100%);
     }
 }
 
