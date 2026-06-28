@@ -1164,13 +1164,13 @@ section,
     margin: 0;
 }
 
-.about .bottom-section .action-buttons {
+.bottom-section .action-buttons {
     display: flex;
     gap: 1rem;
     justify-content: flex-end;
 }
 
-.about .bottom-section .action-buttons .btn-custom {
+.action-buttons .btn-custom {
     display: inline-flex;
     align-items: center;
     padding: 0.875rem 2rem;
@@ -1181,22 +1181,22 @@ section,
     font-size: 1rem;
 }
 
-.about .bottom-section .action-buttons .btn-custom.primary {
+.action-buttons .btn-custom.primary {
     background-color: var(--accent-color);
     color: #ffffff;
 }
 
-.about .bottom-section .action-buttons .btn-custom.primary:hover {
+.action-buttons .btn-custom.primary:hover {
     background-color: color-mix(in srgb, var(--accent-color), transparent 15%);
     transform: translateY(-1px);
 }
 
-.about .bottom-section .action-buttons .btn-custom.secondary {
+.action-buttons .btn-custom.secondary {
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 70%);
     color: var(--default-color);
 }
 
-.about .bottom-section .action-buttons .btn-custom.secondary:hover {
+.action-buttons .btn-custom.secondary:hover {
     border-color: var(--accent-color);
     color: var(--accent-color);
     transform: translateY(-1px);
@@ -1264,11 +1264,11 @@ section,
         font-size: 1.6rem;
     }
 
-    .about .bottom-section .action-buttons {
+    .action-buttons {
         flex-direction: column;
     }
 
-    .about .bottom-section .action-buttons .btn-custom {
+    .action-buttons .btn-custom {
         text-align: center;
         justify-content: center;
     }
