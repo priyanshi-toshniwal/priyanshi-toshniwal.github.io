@@ -2870,7 +2870,7 @@ section,
 
 @media (min-width: 992px) {
     .skills .row > div:first-child {
-        text-align: right;
+        text-align: left;
         padding-right: 2rem;
         border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 80%);
     }
