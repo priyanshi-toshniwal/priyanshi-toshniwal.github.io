@@ -1146,8 +1146,8 @@ section,
 }
 
 .about .bottom-section {
-    padding-top: 60px;
-    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
+    padding-top: 20px;
+    /*border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);*/
 }
 
 .about .bottom-section .collaboration-text h3 {
