@@ -1,5 +1,5 @@
 # Typography and Font Consistency Analysis Report
-**File Analyzed:** `/Users/KMBL295652/WebstormProjects/priyanshi-toshniwal.github.io - Copy/assets/css/main.css`
+**File Analyzed:** `/Users/KMBL295652/WebstormProjects/priyanshi-toshniwal.github.io - Copy/code_assets/css/main.css`
 
 ---
 

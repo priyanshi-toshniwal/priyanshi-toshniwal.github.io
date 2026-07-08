@@ -1,7 +1,7 @@
 /**
  * Photo Gallery Carousel
  * Horizontally scrollable gallery with auto-loop, clickable dots navigation
- * Auto-detects images from assets/img/gallery/ folder
+ * Auto-detects images from big_assets/img/gallery/ folder
  */
 
 (function() {
@@ -9,7 +9,7 @@
 
   // Gallery images - auto-detected from gallery folder
   // Images are discovered sequentially; add new images to the gallery folder with numbered names
-  const galleryFolder = "assets/img/gallery/";
+  const galleryFolder = "big_assets/img/gallery/";
   let galleryImages = [];
 
   let currentSlide = 0;
