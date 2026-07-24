@@ -87,6 +87,25 @@
     scroll-behavior: smooth;
 }
 
+/* Logical section spacing - total vertical gap between two adjacent page
+   sections (sum of the bottom padding of one section and the top padding
+   of the next). Each section's top/bottom padding is half of this value. */
+:root {
+    --section-gap: 90px; /* Desktop */
+}
+
+@media (max-width: 992px) {
+    :root {
+        --section-gap: 60px; /* Tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --section-gap: 40px; /* Mobile */
+    }
+}
+
 /* Scroll Progress Bar */
 body::before {
     content: '';
@@ -652,7 +671,7 @@ section,
 .section {
     color: var(--default-color);
     background-color: var(--background-color);
-    padding: 40px 0;
+    padding: calc(var(--section-gap) / 2) 0;
     overflow: clip;
 }
 
@@ -707,7 +726,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-    padding: 60px 0 20px 0;
+    padding: 60px 0 calc(var(--section-gap) / 2) 0;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -981,11 +1000,6 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-
 .about .intro-header {
     margin-bottom: 80px;
 }
@@ -1215,10 +1229,6 @@ section,
 }
 
 @media (max-width: 992px) {
-    .about {
-        padding: 70px 0;
-    }
-
     .about .intro-header {
         margin-bottom: 60px;
     }
@@ -1273,10 +1283,6 @@ section,
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
-.stats {
-    padding: 120px 0;
-}
-
 .stats .stats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1357,10 +1363,6 @@ section,
 }
 
 @media (max-width: 992px) {
-    .stats {
-        padding: 80px 0;
-    }
-
     .stats .stats-grid {
         gap: 60px;
         margin-bottom: 80px;
@@ -1380,10 +1382,6 @@ section,
 }
 
 @media (max-width: 768px) {
-    .stats {
-        padding: 60px 0;
-    }
-
     .stats .stats-grid {
         grid-template-columns: 1fr;
         gap: 50px;
@@ -2163,6 +2161,7 @@ section,
 
     .resume .education-skills .education-grid .education-card .education-header {
         flex-direction: column;
+        align-items: center;
         text-align: center;
         gap: 0.8rem;
     }
@@ -2833,9 +2832,6 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact {
-    padding: 120px 0 100px;
-}
 
 /* Contact section column alignment */
 .contact .row > div:first-child {
@@ -3068,10 +3064,6 @@ section,
 }
 
 @media (max-width: 768px) {
-    .contact {
-        padding: 80px 0 60px;
-    }
-
     .contact .info-item {
         margin-bottom: 50px;
     }
