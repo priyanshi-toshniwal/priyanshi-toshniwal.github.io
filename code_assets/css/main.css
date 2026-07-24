@@ -1853,6 +1853,12 @@ section,
     padding-left: 2rem;
 }
 
+@media (min-width: 993px) {
+    .resume .professional-journey .experience-timeline {
+        margin-left: 100px;
+    }
+}
+
 .resume .professional-journey .experience-timeline::before {
     content: "";
     position: absolute;
